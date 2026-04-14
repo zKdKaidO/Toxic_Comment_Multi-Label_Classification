@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+
+# Data
+data/
+
+# Features and models
+features/
+models/
+
+# Notebook checkpoints
+*/.ipynb_checkpoints/
+
+# Logs and temp files
+*.log
+*.tmp
