@@ -12,11 +12,18 @@ pandas
 numpy
 scikit-learn
 h5py
+h5sparse
+iterative-stratification
+optuna
 
 nltk
 unidecode
 contractions
 
+matplotlib
+seaborn
+
 tqdm
+joblib
 jupyter
 ipykernel

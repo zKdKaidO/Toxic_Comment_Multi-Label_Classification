@@ -5,7 +5,13 @@ from transformers import AutoTokenizer, AutoModel
 from tqdm import tqdm
 import os
 
-def extract_roberta_features(data_path, output_npy_path, text_column='clean_text_dl', batch_size=128, max_length=128):
+def extract_roberta_features(
+    data_path: str, 
+    output_npy_path: str, 
+    text_column: str = 'clean_text_dl', 
+    batch_size: int = 128, 
+    max_length: int = 128
+):
     # 1. Khởi tạo GPU
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Đang chạy trên thiết bị: {device}")
