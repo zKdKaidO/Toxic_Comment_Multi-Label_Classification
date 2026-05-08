@@ -29,6 +29,7 @@ stemmer = PorterStemmer()
 
 def normalize_text(text):
     """Tiền xử lý cho Traditional Pipeline (TF-IDF)"""
+    text = str(text)
     text = text.lower()
     text = unidecode.unidecode(text)
     text = contractions.fix(text)
