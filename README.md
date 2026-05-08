@@ -32,8 +32,14 @@ The system is designed to solve a Multi-label Classification problem, handle Imb
 ```text
 Project_Toxic_Comment/
 │
+├── data/                                 # (Do not push to Github, download from Kaggle)
+│   ├── train.csv                         # Training data
+│   ├── test.csv                          # Test data
+│   └── test_labels.csv                   # Test labels
+│
 ├── notebooks/
 │   └── CommentClassification.ipynb   # Main Google Colab notebook containing the entire workflow
+|   └── CommentClassification_Local.ipynb   
 │
 ├── modules/
 │   └── text_preprocessing.py             # Python source code with text preprocessing functions
@@ -74,8 +80,11 @@ Project_Toxic_Comment/
    pip install -r requirements.txt
    ```
 
-3. **Run the notebook:**
-   Open and run the `notebooks/01_toxic_comment_pipeline.ipynb` file using Jupyter Notebook or Google Colab. The notebook will automatically download the dataset from Hugging Face.
+3. **Download the dataset:**
+   Due to GitHub's file size limit, the data cannot be pushed to this repository. Please download the dataset from Kaggle (Jigsaw Toxic Comment Classification Challenge): https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge. Extract the downloaded archive and place the files (`train.csv`, `test.csv`, `test_labels.csv`) into the `data/` directory at the project root as shown in the project structure.
+
+4. **Run the notebook:**
+   Open and run the `notebooks/CommentClassification_Local.ipynb` file using Jupyter Notebook or Google Colab.
 
 ---
 

@@ -1,0 +1,18 @@
+{
+  "num_total_rows_after_alignment": 63978,
+  "subset_accuracy": 0.8476194942011316,
+  "micro_f1": 0.5782073361951521,
+  "macro_f1": 0.48774391332651623,
+  "hamming_loss": 0.04274646493065325,
+  "macro_roc_auc": 0.9703707767878199,
+  "label_columns": [
+    "toxic",
+    "severe_toxic",
+    "obscene",
+    "threat",
+    "insult",
+    "identity_hate"
+  ],
+  "threshold_mode": "global",
+  "threshold_used": 0.5
+}
